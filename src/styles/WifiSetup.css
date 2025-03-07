@@ -1,0 +1,95 @@
+.wifi-setup-card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.wifi-setup-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.status-message {
+  padding: 15px;
+  background-color: rgba(33, 150, 243, 0.1);
+  color: var(--info-color);
+  border: 1px solid rgba(33, 150, 243, 0.3);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.network-list {
+  margin-bottom: 20px;
+}
+
+.network-item {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.network-item:hover {
+  background-color: rgba(0, 102, 204, 0.05);
+}
+
+.network-item.selected {
+  border-color: var(--primary-color);
+  background-color: rgba(0, 102, 204, 0.1);
+}
+
+.network-info {
+  display: flex;
+  align-items: center;
+}
+
+.network-name {
+  font-weight: 500;
+}
+
+.network-security {
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--lighter-text);
+}
+
+.network-signal {
+  display: flex;
+  align-items: center;
+}
+
+.signal-bar {
+  width: 4px;
+  height: 12px;
+  margin-right: 2px;
+  background-color: var(--lighter-text);
+  border-radius: 2px;
+}
+
+.signal-bar.active {
+  background-color: var(--secondary-color);
+}
+
+.wifi-form {
+  background-color: rgba(0, 102, 204, 0.05);
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .wifi-setup-card {
+    padding: 15px;
+  }
+  
+  .network-security {
+    display: none;
+  }
+} 

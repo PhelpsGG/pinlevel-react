@@ -1,0 +1,76 @@
+.setup-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.step::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: -50%;
+  width: 100%;
+  height: 3px;
+  background-color: var(--border-color);
+  z-index: 0;
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.step.active .step-number {
+  background-color: var(--primary-color);
+}
+
+.step.complete .step-number {
+  background-color: var(--success-color);
+}
+
+.step.complete::after {
+  background-color: var(--success-color);
+}
+
+.step-text {
+  font-size: 14px;
+  color: var(--light-text);
+}
+
+.step.active .step-text {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.step.complete .step-text {
+  color: var(--success-color);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .step-text {
+    font-size: 12px;
+  }
+} 

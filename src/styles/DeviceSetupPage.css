@@ -1,0 +1,51 @@
+.device-setup-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.setup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.setup-header h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.setup-header p {
+  color: var(--light-text);
+}
+
+.device-id {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.loading {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.2rem;
+  color: var(--light-text);
+}
+
+.setup-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .device-setup-container {
+    padding: 15px;
+  }
+  
+  .setup-header h1 {
+    font-size: 1.8rem;
+  }
+} 

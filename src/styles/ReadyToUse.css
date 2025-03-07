@@ -1,0 +1,146 @@
+.ready-to-use-card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ready-to-use-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.celebrate-icon {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.success-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--success-color);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.instructions {
+  margin: 20px 0;
+}
+
+.instructions h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.level-data {
+  margin-top: 30px;
+  background-color: rgba(0, 102, 204, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.level-data h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.level-indicator {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.level-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  margin: 0 auto;
+  background-color: white;
+}
+
+.level-bubble {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-out;
+}
+
+.level-bubble.level {
+  background-color: var(--success-color);
+}
+
+.level-bubble.not-level {
+  background-color: var(--error-color);
+}
+
+.level-readings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.reading {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  margin: 10px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--light-text);
+}
+
+.value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.value.level {
+  color: var(--success-color);
+}
+
+.value.not-level {
+  color: var(--error-color);
+}
+
+@media (max-width: 768px) {
+  .ready-to-use-card {
+    padding: 15px;
+  }
+  
+  .level-circle {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .reading {
+    min-width: 70px;
+  }
+} 

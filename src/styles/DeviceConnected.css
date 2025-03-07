@@ -1,0 +1,67 @@
+.device-connected-card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.success-icon {
+  margin: 20px auto;
+  width: 64px;
+  height: 64px;
+}
+
+.success-message {
+  margin: 20px 0;
+}
+
+.success-message p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  font-weight: 600;
+  color: var(--success-color);
+}
+
+.device-info {
+  margin-top: 30px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+  text-align: left;
+}
+
+.device-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.device-info p {
+  margin-bottom: 8px;
+  color: var(--light-text);
+}
+
+.device-info span {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.progress-message {
+  margin-top: 20px;
+  color: var(--light-text);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .device-connected-card {
+    padding: 15px;
+  }
+  
+  .success-message p {
+    font-size: 1rem;
+  }
+} 
