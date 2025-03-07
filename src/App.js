@@ -6,13 +6,15 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import DeviceSetupPage from './pages/DeviceSetupPage';
 import NotFoundPage from './pages/NotFoundPage';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/setup" element={<HomePage />} />
           <Route path="/device/:deviceId" element={<DeviceSetupPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
