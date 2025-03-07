@@ -6,6 +6,7 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import DeviceSetupPage from './pages/DeviceSetupPage';
 import DeviceConnectPage from './pages/DeviceConnectPage';
+import DeviceRedirect from './pages/DeviceRedirect';
 import NotFoundPage from './pages/NotFoundPage';
 import Dashboard from './components/Dashboard';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/setup" element={<HomePage />} />
           <Route path="/device" element={<DeviceConnectPage />} />
           <Route path="/device/:deviceId" element={<DeviceSetupPage />} />
+          <Route path="/d/:deviceId" element={<DeviceRedirect />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
